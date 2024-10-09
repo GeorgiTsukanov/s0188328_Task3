@@ -1,0 +1,105 @@
+div.content{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f4e8e8;
+    padding: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.heading{
+    padding: 20px;
+    float: left ;
+}
+
+img.logo{
+    float:left; 
+    width:100px; 
+    height:100px;
+}
+
+div.full-page{
+    width:100%; 
+    background-color: #f4e8e8;
+    padding: 10px; 
+    height:100px;
+}
+
+body{
+    margin: auto;
+    -webkit-text-size-adjust: auto;
+}
+
+table.MyTable {
+	width: 40%;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+}
+
+tr{
+	padding: 10px;
+	font-size: 18px;;
+}
+
+td, th, tr{
+    border: 2px solid black;
+}
+
+
+tr.chet{
+    background-color: brown;
+}
+
+tr.nechet{
+    background-color: burlywood;
+}
+
+
+ul.navigation {
+    float: right;
+	display: flex;
+	gap: 50px;
+    padding-right: 20px ;
+}
+
+html{
+    min-width: 600px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+div.d1{
+    order:2;
+}
+div.d2{
+    order:1;
+}
+div.d3{
+    order:3;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        color: blue;
+    }
+    div.content{
+        width: 960px;
+        flex-direction: column;
+    }
+
+    div.d1{
+        order:1;
+    }
+    div.d2{
+        order:2;
+    }
+    body{
+        font-size: 100%;
+    }  
+}
