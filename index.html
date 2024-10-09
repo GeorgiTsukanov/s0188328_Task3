@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>задание №2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="full-page">
+        <img class="logo" src="Logo.png"/>
+        <div class="heading">Второе практическое задание</div>
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a href="https://www.kubsu.ru">Ссылка меню 1</a>
+            </li>
+            <li class>
+              <a href="https://www.kubsu.ru">Ссылка 2</a>
+            </li>
+            <li>
+              <a href="https://www.kubsu.ru">Ссылка 3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+
+
+
+
+    </br>
+
+
+
+
+
+
+    <div class="content">
+
+
+        <div class="d1">
+          <h1>Ссылки</h1>
+
+        <ul class="list-of-link">
+            <li><a href="https://www.kubsu.ru">1 абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+            <li><a href="https://www.kubsu.ru/index.php">2 абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+            <li><img src="image.jpg" style="width: 600px;"/></li>
+            <li><a href="/page">4 сокращённая ссылка на внутреннюю страницу</a></li>
+            <li><a href="/">5 сокращённая ссылка на главную страницу</a></li>
+            <li><a href="#check-box">6 ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://yandex.ru/maps?a=10&b=30&c=33">7 ссылка с тремя параметрами в URL</a></li>
+            <li><a href="https://yandex.ru/maps?id=13212">8 ссылка с параметром id в URL</a></li>
+            <li><a href="index.html">9 относительная ссылка на страницу в текущем каталоге;</a></li>
+            <li><a href="about/">10 относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../index/">11 относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../index/">12 относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li> Контекстная <a href="https://www.kubsu.ru">ссылка</a> в тексте</li>
+            <li><a href="https://wikipedia.org/wiki/Yandex#History">14 ссылка на фрагмент страницы стороннего сайта</a></li>
+
+            <li>15 ссылки из прямоугольных и круглых областей картинки</li>
+            <map name="click-map1">
+                <area shape="rect" coords="0, 0, 300, 300" href="https://yandex.ru/maps/">
+              </map>
+              <img usemap="#click-map1" src="image.jpg" 
+              alt="picture" width="300px" height="300px">
+            </br>
+            <map name="click-map2">
+              <area shape="circle" coords="150, 150, 150" href="https://yandex.ru/maps/">
+            </map>
+            <img usemap="#click-map2" src ="image_circle.jpg"
+              alt="cir" width="300px" height="300px">
+      
+            <li><a href="">16 ссылка с пустым href</a></li>
+            <li><a>17 ссылка без href</a></li>
+            <li><a href="https://www.kubsu.ru" rel="nofollow">18 ссылка, по которой запрещен переход поисковикам</a></li>
+            <!--noindex--><li><a href="https://www.kubsu.ru">19 сссылка, запрещенная для индексации поисковиками</a></li><!--noindex-->
+            <li>20 нумерованный список ссылок с подписями title
+              <ol>
+                <li><a href="https://www.kubsu.ru" title="kubsu">кубгу 1</a></li>
+                <li><a href="https://www.kubsu.ru" title="kubsu">кубгу 2</a></li>
+                <li><a href="https://www.kubsu.ru" title="kubsu">кубгу 3</a></li>
+              </ol>
+            </li>
+            <li><a href="ftp://user:password@server.com/file.zip">21 ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+    </br>
+
+
+
+
+
+
+   
+
+    <div class="d2">
+      <h1>Таблица</h1>
+				<table class="MyTable" style: float: left>
+					<thead>
+						<tr>
+							<th>Колонка 1</th>
+							<th>Колонка 2</th>
+							<th>Колонка 3</th>
+							<th>Колонка 4</th>
+						</tr>
+					</thead>
+						<tr class="chet">
+							<td rowspan="2">2</td>
+							<td>2</td>
+							<td>2</td>
+							<td>2</td>
+						</tr>
+						<tr class="nechet">
+							<td>3</td>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr class="chet">
+							<td colspan="2">4</td>
+							<td>4</td>
+							<td>4</td>
+						</tr>
+						<tr class="nechet">
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						<tr class="chet">
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+							<td>6</td>
+						</tr>
+				</table>
+      </div>
+
+    </br>
+  
+
+      <div class="d3">
+        <h1>Форма</h1>
+        <form class ="Myform" action="/" 
+        method="POST">
+
+
+        Введите ФИО</br>
+        <label>
+        <input name="field-name"
+            placeholder="ФИО"/>
+        </label></br>
+  
+        <label> 
+          Введите ваш номер телефона</br>
+          <input name="field-tell"
+            type="tel"
+            placeholder="8-918-615-33-54"/>
+        </label></br>
+  
+        <label>
+          Введите ваш email:<br/>
+          <input name="field-email"
+            type="email"/>
+        </label><br/>
+  
+        <label>
+          Текстовое поле даты:<br/>
+          <input name="field-date"
+            value="2003-06-13"
+            type="date"/>
+        </label><br/>
+  
+        <label>
+          Ваш пол:<br/>
+          <label>
+            <input type="radio"
+              checked="checked"
+              name="radio-group-1" value="female"/>
+              Женский
+            </label><br/>
+            <label><input type="radio"
+              name="radio-group-1" 
+              value="male"/>
+              Мужской
+            </label><br/>
+        </label>
+  
+        <label>
+          Ваш любимый язык программирования:<br/>
+          <select name="field-list[]"
+            multiple="multiple">
+            <option value="paskal">Paskal</option>
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskel">Haskel</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+          </select>
+        </label><br/>
+  
+        <label>
+          Напишите автобиографию:<br/>
+          <textarea name="field-autobiography"
+            placeholder="не пишите красивую историю о ваших подвигах и победах"></textarea>
+        </label></br>
+  
+        <label>
+          <input type="checkbox"
+          name="check-box"
+          id="check-box"/>
+          С контрактом ознакомлен(а)
+        </label><br/>
+  
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+
+
+
+
+    </div>
+
+    
+    </br>
+
+    <footer>
+      <div class="full-page">
+        ©Цуканов Георгий
+      </div>
+    </footer>
+  </body>
+
+</html>
