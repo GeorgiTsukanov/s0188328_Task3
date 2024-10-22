@@ -80,14 +80,19 @@ div.d3{
     order:3;
 }
 
-.g{
+.navigation-desktop{
     display: none;
 }
 
-
+.navigation-mobile{
+    width:100%; 
+    background-color: #f4e8e8;
+    padding: 10px; 
+    height:130px;
+    display: block;
+}
 
 ul.navigation {
-    order: 3;
 	display: flex;
     flex-direction: column;
 	gap: 20px;
@@ -110,14 +115,21 @@ ul.navigation {
         order:2;
     }
 
-    ul.navigation {
-        flex-direction: row;
-        gap: 50px;
-        
+    .navigation-desktop{
+        margin: auto;
+        float: right;
+        display: block;
     }
 
-    .g{
-        display: block;
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-right: 20px ;
+    }
+
+    .navigation-mobile{
+        display: none;
     }
 
 
